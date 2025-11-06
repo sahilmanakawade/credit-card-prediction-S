@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Credit Card Eligibility Prediction</title>
+</head>
+<body>
+
+    <h2>Enter The Parameters</h2>
+
+    <form action="/" method="post">
+        <label>AGE:</label>
+        <input type="number" name="AGE" required><br><br>
+
+        <label>EXPERIENCE:</label>
+        <input type="number" name="EXPERIENCE" required><br><br>
+
+        <label>INCOME:</label>
+        <input type="number" name="INCOME" required><br><br>
+
+        <label>ZIP CODE:</label>
+        <input type="number" name="ZIP CODE" required><br><br>
+
+        <label>FAMILY:</label>
+        <input type="number" name="FAMILY" required><br><br>
+
+        <label>CCAvg:</label>
+        <input type="number" name="CCAvg" required><br><br>
+
+        <label>EDUCATION:</label>
+        <input type="number" name="EDUCATION" required><br><br>
+
+        <label>MORTGAGE:</label>
+        <input type="number" name="MORTGAGE" required><br><br>
+
+        <label>PERSONAL LOAN:</label>
+        <input type="number" step="any" name="PERSONAL LOAN" required><br><br>
+
+        <label>SECURITIES ACCOUNT:</label>
+        <input type="number" name="SECURITIES ACCOUNT" required><br><br>
+
+        <label>CD ACCOUNT:</label>
+        <input type="number" name="CD ACCOUNT" required><br><br>
+
+        <label>ONLINE:</label>
+        <input type="number" name="ONLINE" required><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if results %}
+        <h3 style="color: green;">{{ results }}</h3>
+    {% endif %}
+
+    {% if error %}
+        <h3 style="color: red;">{{ error }}</h3>
+    {% endif %}
+
+</body>
+</html>
